@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>sprite image and background-position</title>
+    <style>
+      html, body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .frame {
+        background-image: url(images/sprite.jpg);
+        background-repeat: no-repeat;
+        height: 422px;
+        width: 755px;
+      }
+
+      .alternate {
+        left: 0;
+        position: absolute;
+        text-shadow: 0 1px 0 white;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="js-frame" class="frame"></div>
+
+    <label class="alternate">
+      <input id="js-checkbox" type="checkbox">add overflow and backface-visibility
+    </label>
+
+    <script src="es6-promise.auto.min.js"></script>
+    <script src="cover-style.min.js"></script>
+    <script src="load-image.min.js"></script>
+    <script src="raf.min.js"></script>
+    <script src="2.js"></script>
+  </body>
+</html>
